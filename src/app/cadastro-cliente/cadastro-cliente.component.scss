@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    border: none;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+a, label{
+    font-size: .8rem;
+    color: #ffffff;
+}
+a, input{
+    color: #000;
+}
+a:hover{
+    color: #223474;
+}
+/* conteiner login */ 
+.login-conteiner{
+    background-color: #000;
+    width: 400px;
+    height: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 80px 0px 80px 0px;
+    text-align: center;
+}
+.usuario{
+    width: 105x;
+    height: 105px;
+    border-radius: 5%;
+    position: relative;
+    top: -1%;
+}
+form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5% 35% 10% 35%;
+}
+.full-box{
+    width: 330px;
+    right: 115px;
+    flex: 1 1 100%;
+    position: relative;
+}
+.full-box a{
+    margin-right: 110px;
+}
+label, input{
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+label{
+    font-weight: bold;
+}
+input{
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px 10px 10px 10px;
+}
+input:focus{
+    border-bottom: 2px solid #085588;
+}
+#forgot-pass{
+    text-align: right;
+    display: block;
+}
+.enter {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    color: #ffffff;
+    background-color: #085588;
+    padding: 10px 120px;
+    cursor: pointer;
+}
+.enter:hover{
+    background-color: #063f66;
+    transition: .5s;
+}
+.enter:focus{
+    outline: none;
+}
+/* rdes sociais */ 
+#social-container, #social-container p{
+    margin-bottom: 5px;
+}
+#register-container p{
+    margin-bottom: 10px;
+}
+#register-container, a{
+    color: #085588;
+}
+#social-container i{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    color: #ffffff;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.fa-facebook-f {
+    background-color: #3b5998;
+}
+.fa-linkedin-in{
+    background-color: #0077b5;
+}
