@@ -3,11 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { ListClienteComponent } from './list-cliente/list-cliente.component';
+import { CadastroClienteComponent } from './cadastro-cliente/cadastro-cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListClienteComponent
+    ListClienteComponent,
+    CadastroClienteComponent
   ],
   imports: [
     BrowserModule
