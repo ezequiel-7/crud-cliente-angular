@@ -3,119 +3,110 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffffff;
+    color: #fff;
     border: none;
 }
-textarea:focus, input:focus{
-    outline: none;
+input, .lista{
+    display: block;
+    width: 100%;
 }
-a, label{
-    font-size: .8rem;
-    color: #ffffff;
+input:focus, .lista:focus{
+    outline: none;
 }
 a, input{
     color: #000;
 }
-a:hover{
-    color: #223474;
-}
-/* conteiner login */ 
-.login-conteiner{
-    background-color: #000;
-    width: 400px;
-    height: 620px;
+/* form */
+.login-container{
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 30px;
-    margin-top: 10vh;
+    background-color: #000;
     border-radius: 80px 0px 80px 0px;
+    padding: 25px;
+    margin-top: 10vh;
+    height: 745px;
+}
+.login-container h1{
     text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem; /* adpatada ao elemento root */
 }
 .usuario{
-    width: 105x;
+    width: 105px;
     height: 105px;
     border-radius: 5%;
     position: relative;
     top: -1%;
+    left: 175px;
+    
 }
 form{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 5% 35% 10% 35%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 .full-box{
-    width: 330px;
-    right: 115px;
     flex: 1 1 100%;
     position: relative;
 }
-.full-box a{
-    margin-right: 110px;
+.half-box{
+    flex: 1 1 45%;
+    position: relative;
 }
-label, input{
-    display: block;
-    width: 100%;
-    text-align: left;
+.spacing{
+    margin-right: 2.5%;
 }
-label{
+.lista{
     font-weight: bold;
+    font-size: .8rem;
 }
 input{
-    border-bottom: 2px solid #323232;
+    flex: 1 1 100%;
+    position: relative;
+    border-bottom: 2px solid #5d5f61;
     padding: 10px;
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    background-color: #fff;
     border-radius: 10px 10px 10px 10px;
 }
 input:focus{
-    border-bottom: 2px solid #085588;
+    border-bottom: 2px solid #f50489;
 }
-#forgot-pass{
-    text-align: right;
-    display: block;
-}
-.enter {
+.enter{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
     border: none;
     height: 40px;
     border-radius: 20px;
-    margin-top: 30px;
-    color: #ffffff;
-    background-color: #085588;
-    padding: 10px 120px;
+    margin-left: 26px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #f50489;
+    padding: 10px 170px;
     cursor: pointer;
-}
-.enter:hover{
-    background-color: #063f66;
-    transition: .5s;
 }
 .enter:focus{
     outline: none;
 }
-/* rdes sociais */ 
-#social-container, #social-container p{
-    margin-bottom: 5px;
+.enter:hover{
+    cursor: pointer;
+    background: #df007a;
+    color: #fff;
+    transition: .5s;
 }
-#register-container p{
-    margin-bottom: 10px;
+#agreement{
+    margin-right: 5px;
 }
-#register-container, a{
+#agreement,  #agreement-label{
+    display: inline-block;
+    width: auto;
+}
+#agreement-label a{
     color: #085588;
 }
-#social-container i{
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    line-height: 40px;
-    color: #ffffff;
-    margin: 0 5px;
-    cursor: pointer;
-}
-.fa-facebook-f {
-    background-color: #3b5998;
-}
-.fa-linkedin-in{
-    background-color: #0077b5;
+#agreement-label a:hover{
+    color: #063f66;
 }

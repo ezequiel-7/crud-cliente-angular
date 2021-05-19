@@ -15,4 +15,8 @@ export class CadastroClienteComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  navigate() {
+    this.router.navigate(['list-cliente'])
+  }
+
 }

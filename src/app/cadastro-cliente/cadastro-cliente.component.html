@@ -1,19 +1,53 @@
-<div class="login-conteiner">
+<div class="login-container">
 
-    <img class="usuario" src="assets/images/585e4bf3cb11b227491c339a.png" alt="">
-    <h1>Login</h1>
+    <img class="usuario" src="assets/imagens/585e4bf3cb11b227491c339a.png" alt="">
+    <h1>Cadastro</h1>
 
     <form>
 
-        <div class="full-box">
-            <label for="">E-mail:</label>
-            <input type="text" name="text" placeholder="Digite seu E-mail" autocomplete="off">
+        <div class="half-box spacing">
+            <label for="">CPF:</label>
+            <input type="text" name="text" placeholder="CPF" autocomplete="off">
+        </div>
+
+        <div class="half-box">
+            <label for="">RG:</label>
+            <input type="text" name="text" placeholder="RG" autocomplete="off">
         </div>
 
         <div class="full-box">
-            <label for="">Senha:</label>
-            <input type="password" name="text" placeholder="Digite Sua Senha">
-            <a href="#" id="forgot-pass">Esqueceu a senha?</a>
+            <label for="">Nome completo:</label>
+            <input type="text" name="text" placeholder="Nome completo" autocomplete="off">
+        </div>
+
+        <div class="half-box spacing">
+            <label for="">E-mail:</label>
+            <input type="password" name="text" placeholder="E-mail">
+        </div>
+
+        <div class="half-box">
+            <label for="">Celular:</label>
+            <input type="text" name="text" placeholder="Celular" autocomplete="off">
+        </div>
+
+        <div class="full-box">
+            <label for="">Data de Nacimento:</label>
+            <input type="date" name="text" placeholder="Data de Nacimento" autocomplete="off">
+        </div>
+
+        <div class="half-box spacing">
+            <label for="">Senha de Acesso:</label>
+            <input type="text" name="text" placeholder="Senha de Acesso" autocomplete="off">
+        </div>
+
+        <div class="half-box">
+            <label for="">Confirmar Senha:</label>
+            <input type="text" name="text" placeholder="Confirmar Senha" autocomplete="off">
+        </div>
+
+        <div class="full-box">
+            <input type="checkbox" name="agreement" id="agreement">
+            <label for="agreement" id="agreement-label" >Eu li e aceito os <a href="#">termos de uso</a></label>
         </div>
 
         <div class="full-box">
@@ -21,19 +55,5 @@
         </div>
 
     </form>
-
-    <div id="social-container">
-        <p>Ou entre pelas suas redes sociais</p>
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384=oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
-        <i class="fab fa-facebook-f"></i>
-        <i class="fab fa-linkedin-in"></i>
-    </div>
-
-    <div id="register-conteiner">
-        <p>Ainda não tem uma conta?</p>
-        <a [routerLink]="['/formulario-cliente']">Cadastra-se</a>
-    </div>
     
 </div>

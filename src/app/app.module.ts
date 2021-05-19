@@ -12,6 +12,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent,
     ListClienteComponent,
     CadastroClienteComponent
+
   ],
   imports: [
     BrowserModule,
