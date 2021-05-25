@@ -3,16 +3,16 @@
     <img class="usuario" src="assets/imagens/585e4bf3cb11b227491c339a.png" alt="">
     <h1>Cadastro</h1>
 
-    <form>
+    <form [formGroup]="formClient" (ngSubmit)="cadastrarCliente()">
 
         <div class="half-box spacing">
             <label for="">CPF:</label>
-            <input type="text" name="text" placeholder="CPF" autocomplete="off">
+            <input type="number" name="text" placeholder="CPF" autocomplete="off">
         </div>
 
         <div class="half-box">
             <label for="">RG:</label>
-            <input type="text" name="text" placeholder="RG" autocomplete="off">
+            <input type="number" name="text" placeholder="RG" autocomplete="off">
         </div>
 
         <div class="full-box">
@@ -27,7 +27,7 @@
 
         <div class="half-box">
             <label for="">Celular:</label>
-            <input type="text" name="text" placeholder="Celular" autocomplete="off">
+            <input type="number" name="text" placeholder="Celular" autocomplete="off">
         </div>
 
         <div class="full-box">

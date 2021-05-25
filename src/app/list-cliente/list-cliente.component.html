@@ -1,1 +1,57 @@
-<p>list-cliente works!</p>
+<body page='lista'>
+    
+    <div id='listaRegistros'>
+
+        <div style='display: flex;'>
+            <input style='flex:1' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Fone</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+
+        <div>
+            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
+        </div>
+
+    </div>
+
+    <form id='cadastroRegistro'>
+
+        <div class='label'>
+            <div>ID</div>
+            <div>
+                <input type='number' readonly id='id' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Nome</div>
+            <div>
+                <input id='nome' />
+            </div>
+        </div>
+
+        <div class='label'>
+            <div>Fone</div>
+            <div>
+                <input type='tel' id='fone' />
+            </div>
+        </div>
+
+        <div>
+            <button>Salvar</button>
+            <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
+        </div>
+
+    </form>
+
+</body>
