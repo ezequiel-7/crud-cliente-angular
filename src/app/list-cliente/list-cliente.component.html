@@ -1,57 +1,33 @@
-<body page='lista'>
-    
-    <div id='listaRegistros'>
-
-        <div style='display: flex;'>
-            <input style='flex:1' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+<div> 
+    <div class="conteudo">
+        <div class="topo">
+            <input type="text" id="inputNovaTarefa" placeholder="Adicione uma nova tarefa">
+            <button id="btnAddTarefa">
+                <i class="fa fa-plus"></i>
+            </button>
         </div>
 
-        <table>
-            <thead>
-                <tr>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Fone</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id='listaRegistrosBody'></tbody>
-        </table>
+        <ul id="listaTarefas">
+        </ul>
+    </div>   
 
-        <div>
-            <button onclick="vizualizar('cadastro', true)">Novo usuário</button>
-        </div>
-
+    <div id="janelaEdicao">
+        <button id="janelaEdicaoBtnFechar">
+            <i class="fa fa-remove fa-2x"></i>
+        </button>
+        <h2 id="idTarefaEdicao">#1021</h2>
+        <hr>
+        <form>
+            <div class="frm-linha">
+                <label for="nome">Nome</label>
+                <input type="text" id="inputTarefaNomeEdicao">
+            </div>
+            <div class="frm-linha">
+                <button id="btnAtualizarTarefa">Salvar</button>
+            </div>
+        </form>
     </div>
+    <div id="janelaEdicaoFundo"></div>
 
-    <form id='cadastroRegistro'>
-
-        <div class='label'>
-            <div>ID</div>
-            <div>
-                <input type='number' readonly id='id' />
-            </div>
-        </div>
-
-        <div class='label'>
-            <div>Nome</div>
-            <div>
-                <input id='nome' />
-            </div>
-        </div>
-
-        <div class='label'>
-            <div>Fone</div>
-            <div>
-                <input type='tel' id='fone' />
-            </div>
-        </div>
-
-        <div>
-            <button>Salvar</button>
-            <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
-        </div>
-
-    </form>
-
-</body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</div> 
